@@ -29,7 +29,6 @@ Partial Class employee
         Me.datestart = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.test_btn = New System.Windows.Forms.Button()
         Me.refresh_btn = New System.Windows.Forms.Button()
-        Me.Button1profession_btn = New System.Windows.Forms.Button()
         Me.manage_btn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -84,22 +83,13 @@ Partial Class employee
         Me.refresh_btn.Text = "Refresh"
         Me.refresh_btn.UseVisualStyleBackColor = True
         '
-        'Button1profession_btn
-        '
-        Me.Button1profession_btn.Location = New System.Drawing.Point(398, 341)
-        Me.Button1profession_btn.Name = "Button1profession_btn"
-        Me.Button1profession_btn.Size = New System.Drawing.Size(301, 41)
-        Me.Button1profession_btn.TabIndex = 3
-        Me.Button1profession_btn.Text = "Manage Profession Data"
-        Me.Button1profession_btn.UseVisualStyleBackColor = True
-        '
         'manage_btn
         '
-        Me.manage_btn.Location = New System.Drawing.Point(705, 341)
+        Me.manage_btn.Location = New System.Drawing.Point(650, 341)
         Me.manage_btn.Name = "manage_btn"
-        Me.manage_btn.Size = New System.Drawing.Size(314, 40)
+        Me.manage_btn.Size = New System.Drawing.Size(369, 40)
         Me.manage_btn.TabIndex = 4
-        Me.manage_btn.Text = "Manage This Data"
+        Me.manage_btn.Text = "Manage Data's"
         Me.manage_btn.UseVisualStyleBackColor = True
         '
         'employee
@@ -108,7 +98,6 @@ Partial Class employee
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1031, 394)
         Me.Controls.Add(Me.manage_btn)
-        Me.Controls.Add(Me.Button1profession_btn)
         Me.Controls.Add(Me.refresh_btn)
         Me.Controls.Add(Me.test_btn)
         Me.Controls.Add(Me.employee_list)
@@ -127,6 +116,5 @@ Partial Class employee
     Friend WithEvents datestart As ColumnHeader
     Friend WithEvents test_btn As Button
     Friend WithEvents refresh_btn As Button
-    Friend WithEvents Button1profession_btn As Button
     Friend WithEvents manage_btn As Button
 End Class

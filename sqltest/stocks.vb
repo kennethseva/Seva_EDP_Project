@@ -106,4 +106,8 @@ Public Class stocks
         MsgBox("Sample CLick Success!!", MsgBoxStyle.Information, "Message Box")
     End Sub
 
+    Private Sub manage_btn_Click(sender As Object, e As EventArgs) Handles manage_btn.Click
+        Me.Close()
+        stocks_crud.Show()
+    End Sub
 End Class

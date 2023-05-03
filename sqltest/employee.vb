@@ -87,4 +87,9 @@ Public Class employee
 
     End Sub
 
+    ' Manage Button
+    Private Sub manage_btn_Click(sender As Object, e As EventArgs) Handles manage_btn.Click
+        Me.Close()
+        employee_management.Show()
+    End Sub
 End Class

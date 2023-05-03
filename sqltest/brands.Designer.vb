@@ -23,9 +23,9 @@ Partial Class brands
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.type_list = New System.Windows.Forms.ListView()
-        Me.brand_list = New System.Windows.Forms.ListView()
         Me.typeid = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.producttype = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.brand_list = New System.Windows.Forms.ListView()
         Me.brandid = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.brandname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.test_btn = New System.Windows.Forms.Button()
@@ -47,6 +47,16 @@ Partial Class brands
         Me.type_list.UseCompatibleStateImageBehavior = False
         Me.type_list.View = System.Windows.Forms.View.Details
         '
+        'typeid
+        '
+        Me.typeid.Text = "Type ID"
+        Me.typeid.Width = 180
+        '
+        'producttype
+        '
+        Me.producttype.Text = "Product Type Name"
+        Me.producttype.Width = 199
+        '
         'brand_list
         '
         Me.brand_list.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.brandid, Me.brandname})
@@ -59,16 +69,6 @@ Partial Class brands
         Me.brand_list.TabIndex = 1
         Me.brand_list.UseCompatibleStateImageBehavior = False
         Me.brand_list.View = System.Windows.Forms.View.Details
-        '
-        'typeid
-        '
-        Me.typeid.Text = "Type ID"
-        Me.typeid.Width = 180
-        '
-        'producttype
-        '
-        Me.producttype.Text = "Product Type Name"
-        Me.producttype.Width = 199
         '
         'brandid
         '

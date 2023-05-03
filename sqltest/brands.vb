@@ -106,4 +106,9 @@ Public Class brands
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
     End Sub
+
+    Private Sub manage_btn_Click(sender As Object, e As EventArgs) Handles manage_btn.Click
+        Me.Close()
+        stocks_crud.Show()
+    End Sub
 End Class
